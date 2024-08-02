@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site da Nicolly</title>
+    <link href="https://fonts.googleapis.com/css2?family=Simply+Rounded&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Site da Nicolly</h1>
+        </header>
+        <div class="content">
+            <p>Este é um site produzido pela aluna Nicolly do segundo ano B.</p>
+            <button onclick="showStory()">História do Maluf</button>
+            <div id="story" class="hidden">
+                <p>Maluf é um personagem fictício criado para ilustrar a criatividade dos alunos.</p>
+            </div>
+            <p>Este site serve como um exemplo prático para a disciplina de informática.</p>
+        </div>
+        <footer>
+            <p>Nicolly</p>
+        </footer>
+    </div>
+
+    <script>
+        function showStory() {
+            var story = document.getElementById('story');
+            if (story.classList.contains('hidden')) {
+                story.classList.remove('hidden');
+            } else {
+                story.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
